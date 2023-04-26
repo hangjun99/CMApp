@@ -12,10 +12,10 @@ import java.util.Scanner;
  * <br>1. the client starts CM and logs in to the server with the user name "ccslab".
  * <br>2. If you press the enter key, CM and the client terminates.
  */
-public class CMClientApp {
+public class CMClientApp2 {
     private CMClientStub m_clientStub;
     private CMClientEventHandler m_eventHandler;
-    public CMClientApp() {
+    public CMClientApp2() {
         m_clientStub = new CMClientStub();
         m_eventHandler = new CMClientEventHandler(m_clientStub);
     }
@@ -49,9 +49,9 @@ public class CMClientApp {
 
         // login CM server
         System.out.println("=== login: ");
-        System.out.println("user name: ccslab");
-        System.out.println("password: ccslab");
-        ret = clientStub.loginCM("ccslab", "ccslab");
+        System.out.println("user name: ccslab2");
+        System.out.println("password: ccslab2");
+        ret = clientStub.loginCM("ccslab2", "ccslab2");
 
         if(ret)
             System.out.println("successfully sent the login request.");
